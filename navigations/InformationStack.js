@@ -11,7 +11,9 @@ const InformationStack = () => {
       <Stack.Screen
         name="Information"
         component={Information}
-        options={{ title: "Logo" }}
+        options={{ title: "Logo",
+      headerStyle:{backgroundColor:"#3E4C01"}
+      }}
       />
     </Stack.Navigator>
   );

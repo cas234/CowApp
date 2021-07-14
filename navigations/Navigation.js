@@ -44,8 +44,9 @@ const Navigation = () => {
       <Tab.Navigator
         initialRouteName="Home"
         tabBarOptions={{
-          inactiveTintColor: "grey",
-          activeTintColor: "purple",
+          inactiveTintColor: "white",
+          activeTintColor: "#D18102",
+          style: { backgroundColor: '#3E4C01' },
         }}
         screenOptions={({ route }) => ({
           tabBarIcon: ({ color }) => screenOptions(route, color),

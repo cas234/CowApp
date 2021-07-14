@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     borderBottomColor: "black",
     borderWidth: 1,
-    backgroundColor: "purple",
+    backgroundColor: "#3E4C01",
   },
   TextHeader: {
     fontSize: 25,
@@ -86,11 +86,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     borderBottomColor: "black",
     borderWidth: 1,
-    backgroundColor: "skyblue",
+    backgroundColor: "#D18102",
   },
   TextBody: {
     fontSize: 25,
-    padding: 5,
+    padding: 3.8,
     marginRight: 27,
     color: "black",
   }

@@ -7,7 +7,8 @@ const Stack = createStackNavigator();
 const HomeStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} options={{ title: "Logo" }} />
+      <Stack.Screen name="Home" component={Home} options={{ title: "Logo",
+     headerStyle:{backgroundColor:"#3E4C01"} }} />
     </Stack.Navigator>
   );
 };

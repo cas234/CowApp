@@ -10,7 +10,8 @@ const CreditosStack = () => {
     <Stack.Screen
     name="Creditos"
     component={Creditos}
-    options={{title:"Creditos"}}
+    options={{title:"Creditos",
+    headerStyle:{backgroundColor:"#3E4C01"}}}
     />
 </Stack.Navigator>
   );
