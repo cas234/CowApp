@@ -1,6 +1,7 @@
 import React from "react";
+import { ScrollView } from "react-native";
 import {
-  ScrollView,
+  
   Text,
   StyleSheet,
   Image,
@@ -12,10 +13,11 @@ import {
 
 const Home = () => {
   return (
+    <ScrollView>
     <View style={styles.container}>
       <Image
         style={styles.Image}
-        source={require("../assets/Imagen_Prueba.jpg")}
+        source={require("../assets/Iconos/ec.png")}
       />
       <View style={styles.TextView}>
         <Text style={styles.Text}>
@@ -31,6 +33,7 @@ const Home = () => {
         </Text>
       </View>
     </View>
+    </ScrollView>
   );
 };
 
@@ -45,9 +48,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   Image: {
-    width: Dimensions.get("window").width * 0.85,
-    height: 300,
-    marginTop: 30,
+    width: 200,
+    height: 200,
+    marginTop: 20,
   },
   Text: {
     textAlign: "justify",

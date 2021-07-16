@@ -36,7 +36,7 @@ const Information = () => {
       <View>
         <Image
           style={styles.Image}
-          source={require("../assets/Imagen_Prueba.jpg")}
+          source={require("../assets/Iconos/ec.png")}
         />
       </View>
     </View>
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   Input: {
-    height: 80,
+    height: 60,
     backgroundColor: "#FFF",
     borderWidth: 1,
     borderColor: "#006691",
@@ -81,9 +81,9 @@ const styles = StyleSheet.create({
   },
 
   Image: {
-    width: Dimensions.get("window").width * 0.85,
+    width: 150,
     height: 150,
-    marginTop: 30,
+    marginTop: 25,
   },
 });
 

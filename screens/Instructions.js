@@ -1,10 +1,12 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { ScrollView } from "react-native";
+import { View, StyleSheet, Text, Image,Dimensions} from "react-native";
 
 // import { Container } from './styles';
 
 const Instructions = () => {
   return (
+    <ScrollView>
     <View style={styles.container}>
       <View style={styles.titleSpace}>
         <Text style={styles.title}>Tabla de Nutrientes</Text>
@@ -44,9 +46,15 @@ const Instructions = () => {
         <Text style={styles.TextBody}>50Kg</Text>
         <Text style={styles.TextBody}>159Kg</Text>
       </View>
-      
-     
+
+      <View>
+      <Image
+          style={styles.Image}
+          source={require("../assets/Iconos/ec.png")}
+        />
+      </View>
     </View>
+    </ScrollView>
   );
 };
 
@@ -56,7 +64,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    fontSize: 35,
+    fontSize: 30,
     fontWeight: "bold",
   },
   titleSpace: {
@@ -90,10 +98,15 @@ const styles = StyleSheet.create({
   },
   TextBody: {
     fontSize: 25,
-    padding: 3.8,
+    padding: 5,
     marginRight: 27,
     color: "black",
-  }
+  },
+  Image: {
+    width: 150,
+    height: 150,
+    marginTop: 30,
+  },
 });
 
 export default Instructions;
