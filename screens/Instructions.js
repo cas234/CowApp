@@ -1,59 +1,59 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import { View, StyleSheet, Text, Image,Dimensions} from "react-native";
+import { View, StyleSheet, Text, Image, Dimensions } from "react-native";
 
 // import { Container } from './styles';
 
 const Instructions = () => {
   return (
     <ScrollView>
-    <View style={styles.container}>
-      <View style={styles.titleSpace}>
-        <Text style={styles.title}>Tabla de Nutrientes</Text>
-      </View>
-      <View style={styles.tableHeader}>
-        <Text style={styles.TextHeader}>Calció</Text>
-        <Text style={styles.TextHeader}>Grasas</Text>
-        <Text style={styles.TextHeader}>Calorias</Text>
-      </View>
+      <View style={styles.container}>
+        <View style={styles.titleSpace}>
+          <Text style={styles.title}>Tabla de Nutrientes</Text>
+        </View>
+        <View style={styles.tableHeader}>
+          <Text style={styles.TextHeader}>Calció</Text>
+          <Text style={styles.TextHeader}>Grasas</Text>
+          <Text style={styles.TextHeader}>Calorias</Text>
+        </View>
 
-      <View style={styles.tableBody}>
-        <Text style={styles.TextBody}>100Kg</Text>
-        <Text style={styles.TextBody}>50Kg</Text>
-        <Text style={styles.TextBody}>159Kg</Text>
-      </View>
+        <View style={styles.tableBody}>
+          <Text style={styles.TextBody}>100Kg</Text>
+          <Text style={styles.TextBody}>50Kg</Text>
+          <Text style={styles.TextBody}>159Kg</Text>
+        </View>
 
-      <View style={styles.tableBody}>
-        <Text style={styles.TextBody}>100Kg</Text>
-        <Text style={styles.TextBody}>50Kg</Text>
-        <Text style={styles.TextBody}>159Kg</Text>
-      </View>
+        <View style={styles.tableBody}>
+          <Text style={styles.TextBody}>100Kg</Text>
+          <Text style={styles.TextBody}>50Kg</Text>
+          <Text style={styles.TextBody}>159Kg</Text>
+        </View>
 
-      <View style={styles.tableBody}>
-        <Text style={styles.TextBody}>100Kg</Text>
-        <Text style={styles.TextBody}>50Kg</Text>
-        <Text style={styles.TextBody}>159Kg</Text>
-      </View>
+        <View style={styles.tableBody}>
+          <Text style={styles.TextBody}>100Kg</Text>
+          <Text style={styles.TextBody}>50Kg</Text>
+          <Text style={styles.TextBody}>159Kg</Text>
+        </View>
 
-      <View style={styles.tableBody}>
-        <Text style={styles.TextBody}>100Kg</Text>
-        <Text style={styles.TextBody}>50Kg</Text>
-        <Text style={styles.TextBody}>159Kg</Text>
-      </View>
+        <View style={styles.tableBody}>
+          <Text style={styles.TextBody}>100Kg</Text>
+          <Text style={styles.TextBody}>50Kg</Text>
+          <Text style={styles.TextBody}>159Kg</Text>
+        </View>
 
-      <View style={styles.tableBody}>
-        <Text style={styles.TextBody}>100Kg</Text>
-        <Text style={styles.TextBody}>50Kg</Text>
-        <Text style={styles.TextBody}>159Kg</Text>
-      </View>
+        <View style={styles.tableBody}>
+          <Text style={styles.TextBody}>100Kg</Text>
+          <Text style={styles.TextBody}>50Kg</Text>
+          <Text style={styles.TextBody}>159Kg</Text>
+        </View>
 
-      <View>
-      <Image
-          style={styles.Image}
-          source={require("../assets/Iconos/ec.png")}
-        />
+        <View>
+          <Image
+            style={styles.Image}
+            source={require("../assets/Iconos/ec.png")}
+          />
+        </View>
       </View>
-    </View>
     </ScrollView>
   );
 };
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   },
   Image: {
     width: 150,
-    height: 150,
+    height: 205,
     marginTop: 30,
   },
 });
