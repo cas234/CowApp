@@ -8,7 +8,7 @@ const Creditos = () => {
   return (
     <View style={styles.container}>
       <View style={styles.title}>
-        <Text style={styles.text1}>Creditos</Text>
+        <Text style={styles.text1}>Créditos</Text>
       </View>
 
       <View style={styles.credit}>
@@ -34,7 +34,7 @@ const Creditos = () => {
           <Text style={styles.areastex}>Área de Diseño</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.square3}>
-          <Text style={styles.areastex}>Área ingieneria agronómica</Text>
+          <Text style={styles.areastex}>Área Ingienería Agronómica</Text>
         </TouchableOpacity>
       </View>
 

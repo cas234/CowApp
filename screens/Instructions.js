@@ -12,9 +12,9 @@ const Instructions = () => {
           <Text style={styles.title}>Tabla de Nutrientes</Text>
         </View>
         <View style={styles.tableHeader}>
-          <Text style={styles.TextHeader}>Calció</Text>
+          <Text style={styles.TextHeader}>Calcio</Text>
           <Text style={styles.TextHeader}>Grasas</Text>
-          <Text style={styles.TextHeader}>Calorias</Text>
+          <Text style={styles.TextHeader}>Calorías</Text>
         </View>
 
         <View style={styles.tableBody}>
