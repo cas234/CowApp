@@ -42,7 +42,7 @@ const Navigation = () => {
             tabBarIcon: () => (
               <Image
                 style={styles.Icon}
-                source={require("../assets/Iconos/Icono-calculadora.png")}
+                source={require("../assets/Iconos/Icono-hoja-con-vaca.png")}
               />
             ),
           }}
@@ -54,7 +54,7 @@ const Navigation = () => {
             tabBarIcon: () => (
               <Image
                 style={styles.Icon}
-                source={require("../assets/Iconos/Icono-hoja-con-vaca.png")}
+                source={require("../assets/Iconos/Icono-calculadora.png")}
               />
             ),
           }}

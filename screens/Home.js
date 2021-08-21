@@ -24,24 +24,7 @@ const Home = () => {
         />
         <View style={styles.TextView}>
           <Text style={styles.Text}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
-            dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s, when
-            an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but
-            also the leap into electronic typesetting, remaining essentially
-            unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
+          El bloque multinutricional para vacas Lecheras está elaborado en un formato redondo sólido de 2.2 kg. Ha Sido formulado artesanalmente con ingredientes específicamente seleccionados para equilibrarla la producción de leche y la nutrición en el bovino. Logrando un aumento significativo durante su consumo. La acción del polvo de cáscara de huevo aporta una alta cantidad de calcio, ofreciendo un extra para evitar la enfermedad de la hipocalcemia. La melaza, es beneficiosa porque contiene mega calorías azucares solubles y proteínas es rica en minerales. Por otro lado la utilización de Azufre da como resultado un aumento considerable de peso y se crea un efecto repelente a parásitos externos. Con el suministro de Gallinaza durante la época seca se logra incrementar la producción diaria de leche. El sorgo al igual que el pasto taiwan aportan altas cantidades de energía, manteniendo el peso corporal óptimo en el animal.
           </Text>
         </View>
       </View>

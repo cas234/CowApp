@@ -1,64 +1,56 @@
-import React, { useState } from "react";
-import {
-  Text,
-  StyleSheet,
-  View,
-  Dimensions,
-  TextInput,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import React from "react";
+import { ScrollView } from "react-native";
+import { View, StyleSheet, Text, Image, Dimensions } from "react-native";
 
 // import { Container } from './styles';
 
 const Information = () => {
-  const [Peso, setPeso] = useState(null);
-  const [Total, setTotal] = useState(null);
-
-  const Calcular = () => {
-    setTotal(Peso * 0.1);
-  };
-
-  console.log(Total);
   return (
-    <View style={styles.container}>
-      <View style={styles.TextView}>
-        <Text style={styles.TextSuperior}>
-          Ingresa el peso de la Vaca en KG
-        </Text>
-      </View>
-      <View style={styles.InputView}>
-        <TextInput
-          style={styles.Input}
-          placeholder={"kg"}
-          keyboardType="numeric"
-          onChange={(e) => setPeso(e.nativeEvent.text)}
-        />
-      </View>
-      <View style={styles.resultView}>
-        <Text style={styles.TextSuperior}>Dosificación</Text>
+    <ScrollView>
+      <View style={styles.container}>
+        <View style={styles.titleSpace}>
+          <Text style={styles.title}>Tabla de Nutrientes</Text>
+        </View>
+        <View style={styles.tableHeader}>
+          <Text style={styles.TextHeader}>Contenido</Text>
 
-        <Text style={{ fontSize: 25, fontWeight: "bold" }}>
-          La cantidad de comida es:
-        </Text>
+        </View>
 
-        <Text style={{ fontSize: 45, fontWeight: "bold" }}>{Total} KG</Text>
+        <View style={styles.tableBody}>
+          <Text style={styles.TextBody}>PB(%)</Text>
+          <Text style={styles.TextBody}>16</Text>
+          <Text style={styles.TextBody}>Proteína bruta</Text>
+     
+        </View>
+
+        <View style={styles.tableBody}>
+          <Text style={styles.TextBody}>EM</Text>
+          <Text style={styles.TextBody}>2.78</Text>
+          <Text style={styles.TextBody}>Energía metabolizada</Text>
+        </View>
+
+        <View style={styles.tableBody}>
+          <Text style={styles.TextBody}>Ca(g)</Text>
+          <Text style={styles.TextBody}>1.49</Text>
+          <Text style={styles.TextBody}>Calcio</Text>
+        </View>
+
+        <View style={styles.tableBody}>
+          <Text style={styles.TextBody}>P(g)</Text>
+          <Text style={styles.TextBody}>0.67</Text>
+          <Text style={styles.TextBody}>Fósforo</Text>
+        </View>
+
+      
+
+        <View>
+          <Image
+            style={styles.Image}
+            source={require("../assets/Iconos/ec.png")}
+          />
+        </View>
       </View>
-      <View style={styles.InputView}></View>
-      <View
-        style={{
-          alignItems: "center",
-        }}
-      >
-        <Image
-          style={styles.Image}
-          source={require("../assets/Iconos/ec.png")}
-        />
-        <TouchableOpacity onPress={Calcular} style={styles.TouchableOpacity}>
-          <Text style={styles.Text}>Calcular</Text>
-        </TouchableOpacity>
-      </View>
-    </View>
+    </ScrollView>
   );
 };
 
@@ -67,56 +59,53 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-
-  TextSuperior: {
-    fontSize: 35,
-    fontWeight: "bold",
-  },
-  TextView: {
-    top: 30,
-    height: 100,
-    width: Dimensions.get("window").width * 0.85,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  Input: {
-    height: 60,
-    backgroundColor: "#FFF",
-    borderWidth: 1,
-    borderColor: "#006691",
-    borderRadius: 5,
-    width: Dimensions.get("window").width * 0.85,
-    marginRight: 5,
-    marginLeft: -5,
-    marginBottom: 10,
-    color: "#000",
-    paddingHorizontal: 20,
-  },
-  InputView: {
-    marginTop: 30,
-  },
-  resultView: {
-    justifyContent: "center",
-    marginTop: 30,
-    alignItems: "center",
-  },
-
-  Image: {
-    width: 140,
-    height: 195,
-  },
-  Text: {
+  title: {
     fontSize: 30,
     fontWeight: "bold",
-    color: "#FFF",
   },
-  TouchableOpacity: {
+  titleSpace: {
+    top: 15,
+    height: 100,
+
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  tableHeader: {
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "rgba(62, 76, 1, 0.8)",
-    height: 50,
-    width: Dimensions.get("window").width * 0.8,
-    borderRadius: 20,
+    flexDirection: "row",
+    borderBottomColor: "black",
+    borderWidth: 1,
+    backgroundColor: "#3E4C01",
+    width:"100%"
+  },
+  TextHeader: {
+    fontSize: 25,
+    padding: 5,
+    margin: 7,
+    color: "white",
+  },
+  tableBody: {
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+    borderBottomColor: "black",
+    borderWidth: 1,
+    backgroundColor: "#D18102",
+    width:"100%",
+    
+  },
+  TextBody: {
+    fontSize: 20,
+    flex:1,
+    margin:5,
+    color: "black",
+    width:"100%"
+  },
+  Image: {
+    width: 150,
+    height: 205,
+    marginTop: 30,
   },
 });
 
