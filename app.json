@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#5C7C03"
-      }
+      },
+      "package": "com.cow.innovation"
     },
     "web": {
       "favicon": "./assets/favicon.png"
